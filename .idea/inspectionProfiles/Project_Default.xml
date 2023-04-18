@@ -1,6 +1,7 @@
 <component name="InspectionProjectProfileManager">
   <profile version="1.0">
     <option name="myName" value="Project Default" />
+<<<<<<< HEAD
     <inspection_tool class="DuplicatedCode" enabled="true" level="WEAK WARNING" enabled_by_default="true">
       <Languages>
         <language minSize="103" name="Python" />
@@ -31,6 +32,14 @@
           <option value="tk.Frame" />
           <option value="tkinter.messagebox" />
           <option value="email.data" />
+=======
+    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredIdentifiers">
+        <list>
+          <option value="assignment.strings_methds.hello" />
+          <option value="assignment.Days_of_the_week.future_days" />
+          <option value="assignment.my_folder.rightAngle.user_input" />
+>>>>>>> b7243474f3ced3dc1745b39fb65fb8c5fdb90460
         </list>
       </option>
     </inspection_tool>
