@@ -1,4 +1,7 @@
-class user_repoImpl(user_repo):
+from Data.Repo.user_repo import user_repository_interface
+
+
+class user_repository_impl(user_repository_interface):
     def __init__(self):
         self.balance = 0
         self.count = 0
@@ -34,3 +37,5 @@ class user_repoImpl(user_repo):
                 self.count -= 1
                 break
 
+    def count(self):
+        return self.count

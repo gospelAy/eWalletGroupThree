@@ -5,8 +5,6 @@
         self.securityQuestion = ""
         self.bankAccount = ""
 
-
-
         @property
         def balance(self):
             return self._balance
