@@ -1,0 +1,14 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredIdentifiers">
+        <list>
+          <option value="assignment.strings_methds.hello" />
+          <option value="assignment.Days_of_the_week.future_days" />
+          <option value="assignment.my_folder.rightAngle.user_input" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>
