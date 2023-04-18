@@ -8,6 +8,7 @@
         self.password = ""
         self.dateOfBirth = ""
         self.dateRegister = ""
+        self.phoneNumber = ""
 
         @property
         def firstName(self):
@@ -66,6 +67,14 @@
         def dateRegister(self, dateRegister):
                 self.dateRegister = dateRegister
 
+        @property
+        def phoneNumber (self):
+                return self._phoneNumber
+
+        @phoneNumber.setter
+        def phoneNumber(self, phoneNumber):
+                self.phoneNumber = phoneNumber
+
 
 
         def __str__(self):
@@ -75,6 +84,7 @@
                    f"emailAddress='{self.emailAddress}'," \
                    f" password='{self.password}', " \
                    f"dateOfBirth='{self.dateOfBirth}', " \
+                   f"phoneNumber={self.phoneNumber}',"\ 
                    f"dateRegister='{self.dateRegister}')"
 
 

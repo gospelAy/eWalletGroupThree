@@ -1,34 +1,19 @@
 
     def __init__(self):
-        self.userId = 0
-        self.emailAddress = ""
-        self.password = ""
+
+        self.balance = ""
         self.securityQuestion = ""
         self.bankAccount = ""
 
-        @property
-        def userId(self):
-            return self._userId
 
-        @userId.setter
-        def userId(self, userId):
-            self._userId = userId
 
         @property
-        def emailAddress(self):
-            return self._emailAddress
+        def balance(self):
+            return self._balance
 
-        @emailAddress.setter
-        def emailAddress(self, emailAddress):
-            self._emailAddress = emailAddress
-
-        @property
-        def password(self):
-            return self._password
-
-        @password.setter
-        def password(self, password):
-            self._password = password
+        @balance.setter
+        def password(self, balance):
+            self._balance = balance
 
         @property
         def securityQuestion(self):
@@ -48,8 +33,6 @@
 
 
             def __str__(self):
-                return f"User(userId={self.userId}," \
-                       f" emailAddress={self.emailAddress}, " \
-                       f"password={self.password}, " \
+                return f"password={self.balance}, " \
                        f"securityQuestion={self.securityQuestion}," \
                        f" bankAccount={self.bankAccount})"
