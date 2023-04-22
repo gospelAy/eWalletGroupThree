@@ -21,5 +21,6 @@ class TestUserRepo(unittest.TestCase):
         self.user_repo.create_user(self.user)
         self.assertEqual(1, self.user_repo.count_users())
 
+
 if __name__ == '__main__':
     unittest.main()

@@ -1,19 +1,19 @@
+from abc import ABC, abstractmethod
 
-class user_repository_interface:
+from Data.model.User import User
 
-    def _init_(self):
-        self.users = {}
 
-    def create_user(self, user):
-        self.users[user.id] = user
+class user_repository_interface(ABC):
 
-    def find_user_by_id(self, user_id):
-        return self.users.get(user_id)
+    @abstractmethod
+    def create_user(self, user: User) -> User:
+        pass
 
-    def delete_user_by_id(self, user_id):
-        if user_id in self.users:
-            del self.users[user_id]
+    def find_user_by_id(self, user_id: int) -> User:
+        pass
+
+    def delete_user_by_id(self, user_id: int) -> None:
+        pass
 
     def count_users(self):
-        self.users.__len__()
-
+        pass

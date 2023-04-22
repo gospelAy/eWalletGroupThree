@@ -8,9 +8,9 @@ class user_repository_impl(user_repository_interface):
         self.users = []
 
     def create_user(self, user):
-        user_has_not_been_saved = user.get_id() == 0
+        user_has_not_been_saved = user.user_id == 0
         if user_has_not_been_saved:
-            user.set_id(self.generate_id(), self.generate_balance())
+            user.user_id(self.generate_id(), self.generate_balance())
             self.users.append(user)
             self.count += 1
         return user
@@ -39,3 +39,4 @@ class user_repository_impl(user_repository_interface):
 
     def count(self):
         return self.count
+
